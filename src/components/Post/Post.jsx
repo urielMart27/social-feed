@@ -1,8 +1,14 @@
-const Post = ({}) => {
+import React, { useState } from "react";
+
+const Post = ({ name, body }) => {
   return (
     <div>
-      <div>Name</div>
-      <div>Post</div>
+      <div>
+        <h1>{name}</h1>
+      </div>
+      <div>
+        <p>{body}</p>
+      </div>
     </div>
   );
 };
