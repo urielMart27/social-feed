@@ -2,9 +2,15 @@ import React, { useState } from "react";
 
 const CreatePostForm = ({}) => {
   return (
-    <div>
-      <h4>Name</h4>
-    </div>
+    <form className="flex-item">
+      <div className="flex-item">
+        <label>Name</label>
+        <input />
+        <br />
+        <label>Post</label>
+        <input />
+      </div>
+    </form>
   );
 };
 

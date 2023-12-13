@@ -16,7 +16,11 @@ const Post = ({ name, body }) => {
         <p>{body}</p>
       </div>
       <div>
-        <button onClick={ToggleLike}></button>
+        <button
+          onClick={ToggleLike}
+          style={{ color: liked ? "green" : "red" }}
+        ></button>
+        {liked ? "Dislike" : "Like"}
       </div>
     </div>
   );

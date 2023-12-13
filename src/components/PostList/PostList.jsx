@@ -4,7 +4,7 @@ import initData from "../Data/Data.";
 
 const PostList = ({ posts }) => {
   return (
-    <div>
+    <div className="flex-item">
       <h1>Posts</h1>
       {posts.map((post) => (
         <div key={post.id}>
