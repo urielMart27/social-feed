@@ -1,0 +1,12 @@
+.post-item {
+    border-bottom: 2px solid grey;
+    padding: 5px 50px;
+}
+
+.active-like {
+    background-color: green;
+}
+
+.active-dislike {
+    background-color: red;
+}

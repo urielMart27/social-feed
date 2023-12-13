@@ -1,14 +1,27 @@
 import React, { useState } from "react";
+import "./Post.css";
 
 const Post = ({ name, body }) => {
   const [liked, setLiked] = useState(false);
+  const [disliked, setDisliked] = useState(false);
 
-  const ToggleLike = () => {
-    setLiked(!liked);
+  console.log(liked);
+
+  const handleLike = (e) => {
+    setLiked(true);
+    setDisliked(false);
   };
 
+  const handleDislike = (e) => {
+    setLiked(false);
+    setDisliked(true);
+  };
+
+  const likedClass = liked ? "active-like" : "";
+  const dislikedClass = disliked ? "active-dislike" : "";
+
   return (
-    <div>
+    <div className="post-item">
       <div>
         <h1>{name}</h1>
       </div>
@@ -16,11 +29,12 @@ const Post = ({ name, body }) => {
         <p>{body}</p>
       </div>
       <div>
-        <button
-          onClick={ToggleLike}
-          style={{ color: liked ? "green" : "red" }}
-        ></button>
-        {liked ? "Dislike" : "Like"}
+        <button className={likedClass} onClick={handleLike}>
+          Like
+        </button>
+        <button className={dislikedClass} onClick={handleDislike}>
+          Dislike
+        </button>
       </div>
     </div>
   );
