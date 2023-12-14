@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./CreatePostForm.css";
 
 const CreatePostForm = ({ OnNewPost }) => {
   const [name, setName] = useState("");
@@ -13,16 +14,27 @@ const CreatePostForm = ({ OnNewPost }) => {
     OnNewPost(formData);
   };
   return (
-    <form onSubmit={handleSubmit} className="flex-item">
-      <div className="flex-item">
-        <label>Name</label>
-        <input value={name} onChange={(e) => setName(e.target.value)} />
+    <form onSubmit={handleSubmit} className="create-post-form">
+      <div className="flex-item backround-color">
+        <label className="backround-color">Name</label>
+        <input
+          className="name-input"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
         <br />
-        <label>
+        <label className="backround-color">
           Post
-          <input value={body} onChange={(e) => setBody(e.target.value)} />
+          <br />
+          <input
+            className="post-input"
+            value={body}
+            onChange={(e) => setBody(e.target.value)}
+          />
         </label>
-        <button type="submit">Create</button>
+        <button className="create-post-form button" type="submit">
+          Create
+        </button>
       </div>
     </form>
   );

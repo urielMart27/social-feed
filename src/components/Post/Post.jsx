@@ -22,17 +22,20 @@ const Post = ({ name, body }) => {
 
   return (
     <div className="post-item">
-      <div>
-        <h1>{name}</h1>
+      <div className="inner-container">
+        <h4 className="inner-container">{name}</h4>
       </div>
       <div>
-        <p>{body}</p>
+        <p className="inner-container">{body}</p>
       </div>
-      <div>
-        <button className={likedClass} onClick={handleLike}>
+      <div className="inner-container">
+        <button className={`${likedClass} button-color`} onClick={handleLike}>
           Like
         </button>
-        <button className={dislikedClass} onClick={handleDislike}>
+        <button
+          className={`${dislikedClass} button-color`}
+          onClick={handleDislike}
+        >
           Dislike
         </button>
       </div>

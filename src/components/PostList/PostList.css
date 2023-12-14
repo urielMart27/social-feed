@@ -1,6 +1,11 @@
 .post-list {
     border: 1px solid black;
-    border-radius: 20px;
-    padding: 20px;
-    max-width: 400px;
+    border-radius: 30px;
+    padding: 10px 20px;
+    background-color: white;
+    max-width: 500px;
+}
+
+.backroud-color {
+    background-color: white;
 }

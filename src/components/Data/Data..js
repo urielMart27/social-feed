@@ -2,12 +2,12 @@ const initData = [
     { 
       id: 1, 
       name: 'Uriel Martinez', 
-      body: 'First Post body.'
+      body: 'I will be going to Mexico for the first time in a few months!'
     },
     { 
        id: 2, 
       name: 'Jason Ni', 
-       body: 'Second Post body.'
+       body: 'Merry Christmas everybody! I hope everyone has a great time.'
     },
 ];
 

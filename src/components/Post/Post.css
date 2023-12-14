@@ -1,6 +1,12 @@
 .post-item {
+    background-color: white;
     border-bottom: 2px solid grey;
     padding: 5px 50px;
+}
+
+.inner-container {
+    background-color: white;
+    padding: 10px 50px;
 }
 
 .active-like {
@@ -10,3 +16,4 @@
 .active-dislike {
     background-color: red;
 }
+

@@ -18,7 +18,7 @@ function App() {
       <Header />
       <div className="flex-container">
         <CreatePostForm OnNewPost={handleNewPost} />
-        <PostList posts={posts} />
+        <PostList className="post" posts={posts} />
       </div>
     </div>
   );

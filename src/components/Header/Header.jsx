@@ -3,7 +3,7 @@ import "./Header.css";
 const Header = ({}) => {
   return (
     <header>
-      <h2>SocialFeed</h2>
+      <h2 className="header-box">SocialFeed</h2>
     </header>
   );
 };

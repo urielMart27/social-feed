@@ -1,4 +1,9 @@
 header {
-    background-color: lightblue;
+    background-color: #333333;
     padding: 10px 50px;
+}
+
+.header-box {
+    color: white;
+    background-color: #333333;
 }
